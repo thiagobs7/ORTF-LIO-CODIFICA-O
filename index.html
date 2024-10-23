@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Bernardes - Desenvolvedor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Cabeçalho com Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo Thiago Bernardes">
+            </div>
+            <ul class="menu">
+                <li><a href="#pagina-inicial">PÁGINA INICIAL</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
+                <li><a href="#habilidades">SERVIÇOS</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-2">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+
+            <!-- Conteúdo do menu -->
+            <div class="menu-content">
+                <a href="#pagina-inicial">Início</a>
+                <a href="#sobremim">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </div>
+
+        <!-- Botão de alternância de tema -->
+        <button id="theme-toggle" class="theme-button">
+            <span id="theme-icon">
+                <!-- Ícone de Sol (modo claro) inicial -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 4.354V2h1v2.354h-1zm0 13.292V22h1v-4.354h-1zm9.01-9.01l-1.42 1.42-1.773-1.772 1.42-1.42 1.773 1.772zm-11.82 9.01l-1.773 1.773-1.42-1.42 1.773-1.772 1.42 1.42zM12 6.91a5.09 5.09 0 1 0 0 10.182A5.09 5.09 0 0 0 12 6.91zm7.354 5.09h2.354v1h-2.354v-1zm-13.292 0v1H2v-1h2.354zM4.01 4.01l1.42 1.42L3.657 7.202 2.237 5.78 4.01 4.01zm14.99 11.42l1.773 1.773-1.42 1.42-1.773-1.772 1.42-1.42z" />
+                </svg>
+            </span>
+        </button>
+    </header>
+
+    <main>
+        <section class="main-content" id="pagina-inicial">
+            <div class="flex">
+                <div class="circle">
+                    <img src="foto site .jpg" alt="">
+                </div>
+                <div class="text-content">
+                    <h1>Thiago Bernardes</h1>
+                    <p class="about-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <div class="skills-container">
+                <div class="skills">
+                    <h2>Minhas Habilidades</h2>
+                    <div class="skill-icons">
+                        <img src="js.png" alt="JavaScript">
+                        <img src="png_jvaex.png" alt="MySQL">
+                        <img src="png_ldztyk.png" alt="Figma">
+                        <img src="c-sharp (2).png" alt="C#">
+                    </div>
+                </div>
+                <div class="about-me" id="sobremim">
+                    <h2>UM POUCO SOBRE MIM:</h2>
+                    <p>Olá!<br>Me chamo Thiago, tenho 20 anos,<br> sou estudante de TI. <br> Tenho o objetivo de me
+                        tornar um <br>
+                        grande profissional <br> e conseguir um emprego em uma <br> empresa grande e realizar meus <br>
+                        sonhos. <br>
+                        Acredito muito que a tecnologia <br> pode fazer muita diferença e estou <br> disposto a aprender
+                        sobre
+                        essa área <br> tão importante no nosso cotidiano.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projetos">
+            <div class="projects-section">
+                <h2>MEUS PROJETOS</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <a href="https://github.com/thiagobp3658"><img src="projeto1.png" alt="Projeto 1"></a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/thiagobp3658"> <img src="projeto2.png" alt="Projeto 2"></a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/thiagobp3658">  <img src="projeto3.png" alt="Projeto 3"></a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/thiagobp3658">  <img src="projeto4.png" alt="Projeto 4"></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="form-section" id="contato">
+            <div class="form-container">
+                <h1>Contato</h1>
+                <form action="envia_formulario.php" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="objetivos">Objetivos:</label>
+                        <input type="text" id="objetivos" name="objetivos">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servico">Serviço Desejado:</label>
+                        <select id="servico" name="servico">
+                            <option value="servico1">Marketing</option>
+                            <option value="servico2">Designer Gráfico</option>
+                            <option value="servico3">Indentidade Visual</option>
+                            <option value="servico3">Designer De Interface</option>
+                            <option value="servico3">Video Maker</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <div class="logo-container">
+                    <img src="logo.png" alt="Thiago Bernardes">
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="servicos">
+            <h1>SERVIÇOS</h1>
+            <div class="service">
+                <h2>Marketing</h2>
+                <p>Ajuda marcas com estratégias personalizadas, oferecendo serviços super importantes na visibilidade,
+                    como criação de conteúdos, gestão de mídias sociais. Transformando seus sonhos em realidade!</p>
+            </div>
+
+            <div class="service">
+                <h2>Designer Gráfico</h2>
+                <p>Ajuda a empresas e a marca crescer de forma personalizada, e inovadora, oferecemos o melhor para sua
+                    empresa!</p>
+            </div>
+
+            <div class="service">
+                <h2>Identidade Visual</h2>
+                <p>Somos especialistas em criar identidades visuais que elevem sua marca, desenvolvemos logotipos de
+                    acordo com o seu produto e seu gosto, garantindo uma identidade única para marca.</p>
+            </div>
+
+            <div class="service">
+                <h2>Design de Interface</h2>
+                <p>Tenho a especialização de criar interfaces que combinam com a estética e funcionalidade. Transformo a
+                    interação dos seus usuários com soluções visuais que são ao mesmo tempo atraentes e intuitivas.</p>
+            </div>
+
+            <div class="spacer"></div> <!-- Div vazia para criar o espaço central -->
+
+            <div class="service">
+                <h2>Video Maker</h2>
+                <p>Garantimos filmagens completas do seu evento e do seu conteúdo digital.</p>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- Seção de ícones de redes sociais -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/thiago-bernardes-ab7a7a334"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/thiagobp3658"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/_thiagob.7/"><i class='bx bxl-instagram'></i></a>
+        </div>
+
+        <ul class="list">
+            <a href="#pagina-inicial">Início</a>
+                <a href="#sobremim">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+        </ul>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
